@@ -1,0 +1,448 @@
+@media all {
+    .admin-report-topic-heading,
+    .admin-item1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        padding: 10px 0;
+        gap: 5px;
+    }
+
+    .admin-items {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .admin-t-op,
+    .admin-t-op-nextlvl {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .admin-label-tag {
+        width: auto;
+        min-width: 90px;
+        display: inline-block;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .menu-icon {
+        cursor: pointer;
+        display: none; 
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .admin-body .admin-navcontainer {
+        width: 250px;
+        transition: all 0.3s ease;
+    }
+    .admin-body .admin-main {
+        margin-left: 250px;
+        transition: all 0.3s ease;
+    }
+    .nav-links {
+        display: flex;
+    }
+    nav .fa, .main-nav .fa, .menu-icon {
+        display: none;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .contact {
+        padding: 50px;
+    }
+    .admin-body .admin-navcontainer {
+        width: 220px;
+    }
+    .admin-body .admin-main {
+        margin-left: 220px;
+    }
+    .admin-report-topic-heading,
+    .admin-item1,
+    .admin-items {
+        width: 100%;
+    }
+    nav .fa, .main-nav .fa, .menu-icon {
+        display: none;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    nav, .main-nav {
+        padding: 0 4%;
+    }
+    .contact {
+        padding: 40px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .container .info {
+        margin-bottom: 30px;
+    }
+    
+    .container .info, .form {
+        width: 100%;
+    }
+    .admin-body .admin-navcontainer {
+        width: 200px;
+    }
+    
+    .admin-body .admin-main {
+        margin-left: 200px;
+    }
+    
+    .admin-nav-img {
+        height: 25px;
+    }
+    
+    .admin-nav-option {
+        gap: 15px;
+    }
+    
+    .admin-nav-option h3 {
+        font-size: 15px;
+    }
+    .mvcbox1 {
+        padding: 0 30px;
+    }
+    .portfolio-content-wrapper {
+        padding: 20px;
+    }
+    .blogtitle h1 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+    nav, .main-nav {
+        height: 70px;
+        padding: 0 3%;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img, .main-nav img {
+        width: 130px;
+    }
+    .menu-icon, nav .fa, .main-nav .fa {
+        display: block !important;
+        color: #F5F5DC;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .login-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .header, .about, .contact, .portfolio-page, .blogheader, .stext-box {
+        padding-top: 90px;
+    }
+    .mvcbox1 {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .mvcbox1-col, .mvcbox2-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 85%;
+        margin: 25px auto;
+    }
+    .admin-body .admin-menuicn {
+        display: block;
+    }
+    .admin-body .admin-navcontainer {
+        width: 250px;
+        position: fixed;
+        top: 140px;
+        left: -250px;
+        height: calc(100vh - 140px);
+        z-index: 999;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+    .admin-body .admin-navopen {
+        left: 0 !important;
+    }
+    
+    .admin-body .admin-main {
+        margin-left: 0;
+        width: 100%;
+    }
+    .admin-searchbar {
+        width: 200px;
+    }
+    .columnpkg {
+        width: 80%;
+        margin: 15px auto;
+    }
+    .footerrow {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .logotext, .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-col h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .footer-col ul li {
+        margin-bottom: 10px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    .container, .section-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 575px) {
+    nav, .main-nav {
+        height: 60px;
+        padding: 0 2%;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img, .main-nav img {
+        width: 100px;
+    }
+    .nav-links {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.95);
+        height: 100vh;
+        width: 70%;
+        top: 0;
+        right: -70%;
+        text-align: left;
+        z-index: 1001;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    .menu-icon, nav .fa, .main-nav .fa {
+        display: block !important;
+        color: #F5F5DC;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    .nav-links ul {
+        padding: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+        margin: 15px 0;
+    }
+    .login-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .header, .about, .contact, .portfolio-page, .blogheader, .stext-box {
+        padding-top: 70px;
+    }
+    .text-box h1 {
+        font-size: 30px;
+    }
+    .text-box p {
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+    .about1 h1 {
+        font-size: 30px;
+    }
+    .about1 p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .mvcbox1 {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .mvcbox1-col, .mvcbox2-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .mvcbox1-col h2, .mvcbox2-col h2 {
+        font-size: 24px;
+    }
+    .mvcbox1 p, .mvcbox2-col p {
+        font-size: 14px !important;
+        text-align: left !important;
+        padding: 10px !important;
+    }
+    .mvcbox1-col ul {
+        padding: 10px;
+    }
+    .mvcbox1-col li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .admin-body .admin-header {
+        height: 60px;
+        padding: 0 10px;
+    }
+    .admin-body .admin-main-container {
+        margin-top: 130px;
+    }
+    .admin-body .admin-menuicn {
+        display: block;
+    }
+    .admin-body .admin-navcontainer {
+        width: 85%;
+        position: fixed;
+        top: 130px;
+        left: -100%;
+        height: calc(100vh - 130px);
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+    .admin-body .admin-navopen {
+        left: 0 !important;
+    }
+    .admin-body .admin-main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .admin-searchbar {
+        display: none;
+    }
+    .admin-searchbar2 {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .admin-box-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .admin-box {
+        padding: 15px 10px;
+    }
+    .admin-topic-heading {
+        font-size: 24px;
+    }
+    .admin-topic {
+        font-size: 14px;
+    }
+    .admin-report-container {
+        padding: 15px 10px;
+    }
+    .admin-report-header {
+        padding-bottom: 10px;
+    }
+    .admin-recent-Articles {
+        font-size: 20px;
+    }
+    .admin-view {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .admin-items {
+        overflow-x: auto;
+    }
+    .admin-report-body [style*="display: flex; flex-wrap: wrap"] > div {
+        width: 48% !important;
+        margin-bottom: 5px !important;
+    }
+    .contact {
+        padding: 20px 15px;
+    }
+    .content h2 {
+        font-size: 24px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .togglemenucol h1 {
+        font-size: 26px;
+    }
+    .columnpkg {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .footerrow {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .logotext, .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-col h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .footer-col ul li {
+        margin-bottom: 10px;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .container, .section-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+

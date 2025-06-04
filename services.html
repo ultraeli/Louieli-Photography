@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Services</title>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    	<link rel="icon" type="image/x-icon" href="assets/images/Logo RB 5.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="https://kit.fontawesome.com/7082298521.js" crossorigin="anonymous"></script>
+	    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body class="ServicesMain">
+        <nav class="main-nav">
+			<a href="home.html"><img src="assets/Images/Logo RB 5.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+                   <button class="login-button" onclick="openForm()">Login</button>
+                    <div class="form-popup" id="myForm3">
+                        <form id="loginForm" class="form-container" onsubmit="return handleFormSubmit(event, 'login')">
+                            <h1 id="formTitle">LOGIN</h1>
+                            
+                            <div id="loginFields">
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="btn">Login</button>
+                            </div>
+
+                            <div id="registerFields" style="display: none;">
+                                <label for="name"><b>Full Name</b></label>
+                                <input type="text" placeholder="Enter Full Name" name="name">
+                                
+                                <label for="reg-email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="reg-email">
+
+                                <label for="reg-psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="reg-psw">
+                                
+                                <label for="confirm-psw"><b>Confirm Password</b></label>
+                                <input type="password" placeholder="Confirm Password" name="confirm-psw">
+
+                                <button type="button" class="btn" onclick="handleRegister()">Register</button>
+                            </div>
+                            
+                            <div class="form-switch">
+                                <p id="loginLink" style="display: none;">Already have an account? <a href="#" onclick="toggleForm('login'); return false;">Login</a></p>
+                                <p id="registerLink">Need an account? <a href="#" onclick="toggleForm('register'); return false;">Register</a></p>
+                            </div>
+                            
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>    
+    
+<!---- HEADER ---->    
+<div id="textanim" class="hidden"> 
+<section class="stext-box">
+    <div class="stext-cont">
+        <h1 class="slide-in-right">YOUR STORY IN OUR LENSES</h1>
+        <p class="slide-in-right">Our packages are curated to suit your needs<br>in capturing your journey</p>
+    </div>
+</section>
+</div>
+<!--- PACKAGES/TABS ---->
+<section class="togglemenucol">
+    <h1>PACKAGES</h1>
+    <p>Explore the skill and adaptability of our photography and video services. 
+        Whether you're celebrating timeless love or marking a new milestone, we capture your cherished moments with beauty and precision.</p>
+    <br>
+    <div class="tab">
+      <button class="tablinks" onclick="openPackage(event, 'Standard')">STANDARD</button>
+      <button class="tablinks" onclick="openPackage(event, 'Wedding')">WEDDING</button>
+    </div>
+    <div id="Standard" class="tabcontent">
+        <h2>STANDARD PACKAGES</h2>
+        <p>For all your basic photography needs!</p>
+        <div class="packages-col">
+            <div class="rowpkg">
+                <div id="columnanim1" class="hidden">
+                <div class="columnpkg">           
+                    <h3>Package 1</h3>
+                    <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> 1 Person</p>
+                    <p><i class="fa fa-check-circle"></i> 1 Photographer</p>
+                    <p><i class="fa fa-check-circle"></i> 1 Hour Session</p>
+                    <p><i class="fa fa-check-circle"></i> 20 Digital Images</p>
+                    <p><i class="fa fa-check-circle"></i> Photo Release</p>
+                </div>
+                <div class="columnpkg">
+                    <h3>Package 2</h3>
+                    <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> 1-3 Person(s)</p>
+                    <p><i class="fa fa-check-circle"></i> 1 Photographer</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Hours Session</p>
+                    <p><i class="fa fa-check-circle"></i> 40 Digital Images</p>
+                    <p><i class="fa fa-check-circle"></i> Photo Release</p>
+                    <p><i class="fa fa-check-circle"></i> Facebook Cover</p>
+                </div>
+                <div class="columnpkg">
+                    <h3>Package 3</h3>
+                    <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> 1-6 Person(s)</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Photographers</p>
+                    <p><i class="fa fa-check-circle"></i> 4 Hours Session</p>
+                    <p><i class="fa fa-check-circle"></i> 60 Digital Images</p>
+                    <p><i class="fa fa-check-circle"></i> Photo Release</p>
+                    <p><i class="fa fa-check-circle"></i> Facebook Cover</p>  
+                    <p><i class="fa fa-check-circle"></i> Online Gallery</p> 
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Wedding" class="tabcontent">
+        <h2>WEDDING PACKAGES</h2>
+        <p>Our specialized wedding packages!<br>All packages offer unlimited photos stored in USB drive.</p> 
+        <div class="packages-col">
+            <div class="rowpkg">
+                <div id="columnanim2" class="hidden">
+                <div class="columnpkg">         
+                    <h3>Package 1</h3>
+                    <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> 4 Hours Coverage</p>
+                    <p><i class="fa fa-check-circle"></i> 1 Photographer</p>
+                    <p><i class="fa fa-check-circle"></i> 100 Edited Photos</p>
+                    <p><i class="fa fa-check-circle"></i> Online Gallery</p> 
+                    <p><i class="fa fa-check-circle"></i> 1 Wedding Album</p> 
+                </div>
+                <div class="columnpkg">
+                    <h3>Package 2</h3>
+                    <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> 8 Hours Coverage</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Photographers</p>
+                    <p><i class="fa fa-check-circle"></i> 1 Engagement Session</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Wedding Albums</p>
+                    <p><i class="fa fa-check-circle"></i> Wedding Slideshow Presentation</p>
+                </div>
+                <div class="columnpkg">
+                    <h3>Package 3</h3>
+              <button class="open-button" onclick="openForm()">Inquire Now</button>
+                    <br>
+                    <p><i class="fa fa-check-circle"></i> Whole Day Coverage</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Photographers</p>
+                    <p><i class="fa fa-check-circle"></i> 2 Videographers</p>
+                    <p><i class="fa fa-check-circle"></i> 500 Edited Photos</p>
+                    <p><i class="fa fa-check-circle"></i> Engagement & Post-wedding Sessions</p>
+                    <p><i class="fa fa-check-circle"></i> Full Edited Video</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---- FOOTER ---->
+<section class="footer">
+    <div class="footerrow">
+        <div class="logotext">
+            <div id="footerlogo">
+                <img src="assets/images/Logo RB 5.png" id="footerimg" alt="Louieli Photography">
+            </div>
+            <p>At Louieli Photography, our mission is to capture life's most precious moments with authenticity, artistry, and emotion.</p>
+        </div>
+        <div class="footer-col">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Contact Info</h2>
+            <p><i class="fa fa-phone"></i>09694724268</p>
+            <p><i class="fa fa-envelope"></i>louieli@photography.com</p>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Louieli Photography. All rights reserved.</p>
+    </div>
+</section>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

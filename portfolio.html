@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Louieli Photography</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo RB 5.png">
+	<link rel="preload" as="image" href="assets/Images/portfoliobg.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="BlogMain">
+    <section class="portfolio-page">
+            <nav class="main-nav">
+                <a href="index.html"><img src="assets/images/Logo RB 5.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                    <button class="login-button" onclick="openForm()">Login</button>
+					<div class="form-popup" id="myForm3">
+						<form id="loginForm" class="form-container" onsubmit="return handleFormSubmit(event, 'login')">
+							<h1 id="formTitle">LOGIN</h1>
+							<div id="loginFields">
+								<label for="email"><b>Email</b></label>
+								<input type="text" placeholder="Enter Email" name="email" required>
+
+								<label for="psw"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+
+								<button type="submit" class="btn">Login</button>
+							</div>
+							<div id="registerFields" style="display: none;">
+								<label for="name"><b>Full Name</b></label>
+								<input type="text" placeholder="Enter Full Name" name="name">
+								
+								<label for="reg-email"><b>Email</b></label>
+								<input type="text" placeholder="Enter Email" name="reg-email">
+
+								<label for="reg-psw"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="reg-psw">
+								
+								<label for="confirm-psw"><b>Confirm Password</b></label>
+								<input type="password" placeholder="Confirm Password" name="confirm-psw">
+
+								<button type="button" class="btn" onclick="handleRegister()">Register</button>
+							</div>
+							
+							<div class="form-switch">
+								<p id="loginLink" style="display: none;">Already have an account? <a href="#" onclick="toggleForm('login'); return false;">Login</a></p>
+								<p id="registerLink">Need an account? <a href="#" onclick="toggleForm('register'); return false;">Register</a></p>
+							</div>
+							
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						</form>
+					</div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+    </section>
+<!---- PORTFOLIO ---->
+    <div class="portfolio-content-wrapper">
+        <div class="text-box title">
+            <h1>OUR WORKS</h1>
+            <p>Welcome to Louieli Photography—where every frame tells a story.<br>Explore a curated collection of moments, emotions, and artistry captured through our lens.</p>
+        </div>
+
+        <section class="slides">
+            <div class="slides-wrapper">
+                <div class="row">
+                    <div class="slides-container">
+                        <div class="pSlides fade">
+                            <img src="assets/Images/after.jpg" style="width:100%">
+                        </div>
+
+                        <div class="pSlides fade">
+                            <img src="assets/Images/4.jpg" style="width:100%">
+                        </div>
+                        <!-- Arrows -->
+                        <a class="pprev" onclick="pplusSlides(-1)">❮</a>
+                        <a class="pnext" onclick="pplusSlides(1)">❯</a>
+                        <!-- Dots -->
+                        <div style="text-align:center">
+                            <span class="pdot" onclick="pcurrentSlide(1)"></span> 
+                            <span class="pdot" onclick="pcurrentSlide(2)"></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!---- GRID ---->
+	<section class="grid">
+<!---- PORTRAIT ---->
+			<h1>PORTRAIT PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/port1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/port2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/port3.jpg" style="width:100%">
+  				</div>
+			</div>
+<!---- STREET ---->
+			<h1>STREET PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/st1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/st2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/st3.jpg" style="width:100%">
+  				</div>
+			</div>
+<!---- FASHION ---->
+			<h1>FASHION PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/f1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/f2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/f3.jpg" style="width:100%">
+  				</div>
+			</div>
+<!---- ABSTRACT ---->
+			<h1>ABSTRACT PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/a1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/a2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/a3.jpg" style="width:100%">
+  				</div>
+			</div>
+<!---- FOOD ---->
+			<h1>FOOD PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/fo1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/fo2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/fo3.jpg" style="width:100%">
+  				</div>
+			</div>
+<!---- B&W ---->
+			<h1>BLACK AND WHITE PHOTOGRAPHY</h1>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/bw1.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/bw2.jpg" style="width:100%">
+  				</div>
+			</div>
+			<div class="row">
+  				<div class="column">
+    					<img src="assets/Images/bw3.jpg" style="width:100%">
+  				</div>
+			</div>
+	</section>
+<!---- FOOTER ---->
+<section class="footer">
+    <div class="footerrow">
+        <div class="logotext">
+            <div id="footerlogo">
+                <img src="assets/images/Logo RB 5.png" id="footerimg" alt="Louieli Photography">
+            </div>
+            <p>At Louieli Photography, our mission is to capture life's most precious moments with authenticity, artistry, and emotion.</p>
+        </div>
+        <div class="footer-col">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Contact Info</h2>
+            <p><i class="fa fa-phone"></i>09694724268</p>
+            <p><i class="fa fa-envelope"></i>louieli@photography.com</p>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Louieli Photography. All rights reserved.</p>
+    </div>
+</section>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

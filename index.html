@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Louieli Photography</title>
+    	<link rel="icon" type="image/x-icon" href="assets/images/Logo RB 5.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+	<div id="overlay">
+		<h1>CLICK ANYWHERE</h1>
+	</div>
+	<div id="contents" style="display: none;">
+		<section class="header">
+		<video autoplay loop muted id="myVideo">
+  			<source src="assets/images/og.mp4" type="video/mp4">
+		</video>
+		<nav class="main-nav">
+			<a href="index.html"><img src="assets/images/Logo RB 5.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contactus.html">Contact</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</div>
+                    <button class="login-button" onclick="openForm()">Login</button>
+					<div class="form-popup" id="myForm3">
+						<form id="loginForm" class="form-container" onsubmit="return handleFormSubmit(event, 'login')">
+							<h1 id="formTitle">LOGIN</h1>
+							
+							<div id="loginFields">
+								<label for="email"><b>Email</b></label>
+								<input type="text" placeholder="Enter Email" name="email" required>
+
+								<label for="psw"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+
+								<button type="submit" class="btn">Login</button>
+							</div>
+
+							<div id="registerFields" style="display: none;">
+								<label for="name"><b>Full Name</b></label>
+								<input type="text" placeholder="Enter Full Name" name="name">
+								
+								<label for="reg-email"><b>Email</b></label>
+								<input type="text" placeholder="Enter Email" name="reg-email">
+
+								<label for="reg-psw"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="reg-psw">
+								
+								<label for="confirm-psw"><b>Confirm Password</b></label>
+								<input type="password" placeholder="Confirm Password" name="confirm-psw">
+
+								<button type="button" class="btn" onclick="handleRegister()">Register</button>
+							</div>
+							
+							<div class="form-switch">
+								<p id="loginLink" style="display: none;">Already have an account? <a href="#" onclick="toggleForm('login'); return false;">Login</a></p>
+								<p id="registerLink">Need an account? <a href="#" onclick="toggleForm('register'); return false;">Register</a></p>
+							</div>
+							
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						</form>
+					</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="text-box">
+			<h1>L o u i e l i</h1>
+			<h2>P H O T O G R A P H Y</h2>
+			<p>Your Story in Our Lenses</p>
+		</div>
+		</section>
+	</div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

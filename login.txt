@@ -1,0 +1,7 @@
+admin page login simulation
+email: admin@louieli.com
+pass: admin123
+
+user page registration simulation
+email: user@louieli.com
+pass: user123

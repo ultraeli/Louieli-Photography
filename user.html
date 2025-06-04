@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Louieli Photography - My Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo RB 5.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="admin-body">
+
+    <nav class="main-nav">
+        <a href="index.html"><img src="assets/images/Logo RB 5.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <button class="login-button" onclick="window.location.href='index.html'">Logout</button>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <header class="admin-header">
+    <div class="admin-menuicn">
+    <i class="fa fa-bars" id="admin-menuicn" onclick="toggleAdminMenu()"></i>
+    </div>
+    <div class="admin-logosec">
+        <div class="admin-logo">My Account</div>
+    </div>
+    
+    <div class="admin-searchbar">
+        <input type="text" placeholder="Search your photos" />
+        <div class="admin-searchbtn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+
+    <div class="admin-message">
+        <div class="admin-circle"></div>
+        <i class="fa fa-bell admin-icn"></i>
+        <div class="admin-dp">
+           <!--- <img src="assets/images/about2.jpg" class="admin-dpicn" alt="profile" /> --->
+        </div>
+    </div>
+</header>
+
+    <div class="admin-main-container">
+        <div class="admin-navcontainer">
+            <nav class="admin-nav">
+                <div class="admin-nav-upper-options">
+                    <div class="admin-nav-option admin-option1">
+                        <i class="fa fa-dashboard admin-nav-img"></i>
+                        <h3>Dashboard</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-image admin-nav-img"></i>
+                        <h3>My Photos</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-calendar admin-nav-img"></i>
+                        <h3>My Bookings</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-camera admin-nav-img"></i>
+                        <h3>Book a Session</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-user admin-nav-img"></i>
+                        <h3>My Profile</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-cog admin-nav-img"></i>
+                        <h3>Settings</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-sign-out admin-nav-img"></i>
+                        <h3>Logout</h3>
+                    </div>
+
+                    <div class="admin-nav-option admin-home">
+                        <i class="fa fa-home admin-nav-img"></i>
+                        <h3><a href="index.html" style="color: inherit; text-decoration: none;">Main Site</a></h3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="admin-main">
+            <div class="admin-searchbar2">
+                <input type="text" placeholder="Search your photos" />
+                <div class="admin-searchbtn">
+                    <i class="fa fa-search admin-icn srchicn"></i>
+                </div>
+            </div>
+
+            <!-- Welcome Section -->
+            <div style="margin-bottom: 30px; color: beige;">
+                <h1>Welcome, User!</h1>
+                <p>Here's an overview of your photography journey with us.</p>
+            </div>
+
+           <div class="admin-box-container">
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">3</h2>
+                        <h2 class="admin-topic">Sessions<br>Booked</h2>
+                    </div>
+                    <i class="fa fa-calendar-check-o fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">127</h2>
+                        <h2 class="admin-topic">Photos<br>Available</h2>
+                    </div>
+                    <i class="fa fa-picture-o fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">45</h2>
+                        <h2 class="admin-topic">Downloaded</h2>
+                    </div>
+                    <i class="fa fa-download fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">1</h2>
+                        <h2 class="admin-topic">Upcoming<br>Session</h2>
+                    </div>
+                    <i class="fa fa-clock-o fa-2x" style="color: beige;"></i>
+                </div>
+            </div>
+
+            <!-- Recent Photos Section -->
+            <div class="admin-report-container">
+                <div class="admin-report-header">
+                    <h1 class="admin-recent-Articles">Recent Photos</h1>
+                    <button class="admin-view">View All</button>
+                </div>
+
+                <div class="admin-report-body" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                    <!-- Photo Grid -->
+                    <div style="width: 24%; margin-bottom: 10px; padding-top: 10px;">
+                        <img src="assets/Images/port1.jpg" style="width: 100%; border-radius: 10px;">
+                    </div>
+                    <div style="width: 24%; margin-bottom: 10px; padding-top: 10px;">
+                        <img src="assets/Images/port2.jpg" style="width: 100%; border-radius: 10px;">
+                    </div>
+                    <div style="width: 24%; margin-bottom: 10px; padding-top: 10px;">
+                        <img src="assets/Images/port3.jpg" style="width: 100%; border-radius: 10px;">
+                    </div>
+                    <div style="width: 24%; margin-bottom: 10px; padding-top: 10px;">
+                        <img src="assets/Images/f1.jpg" style="width: 100%; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Bookings -->
+            <div class="admin-report-container" style="margin-top: 30px;">
+                <div class="admin-report-header">
+                    <h1 class="admin-recent-Articles">Your Bookings</h1>
+                    <button class="admin-view">Book New Session</button>
+                </div>
+
+                <div class="admin-report-body">
+                    <div class="admin-report-topic-heading">
+                        <h3 class="admin-t-op">Package</h3>
+                        <h3 class="admin-t-op">Date</h3>
+                        <h3 class="admin-t-op">Location</h3>
+                        <h3 class="admin-t-op">Status</h3>
+                    </div>
+
+                    <div class="admin-items">
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Standard Package 2</h3>
+                            <h3 class="admin-t-op-nextlvl">June 15, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl">City Park</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Upcoming</h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Wedding Package 1</h3>
+                            <h3 class="admin-t-op-nextlvl">May 28, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl">Grand Hotel</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Completed</h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Standard Package 1</h3>
+                            <h3 class="admin-t-op-nextlvl">April 10, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl">Studio</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Completed</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download History -->
+            <div class="admin-report-container" style="margin-top: 30px;">
+                <div class="admin-report-header">
+                    <h1 class="admin-recent-Articles">Download History</h1>
+                    <button class="admin-view">View All</button>
+                </div>
+
+                <div class="admin-report-body">
+                    <div class="admin-report-topic-heading">
+                        <h3 class="admin-t-op">Album</h3>
+                        <h3 class="admin-t-op">Date</h3>
+                        <h3 class="admin-t-op">Size</h3>
+                        <h3 class="admin-t-op">Action</h3>
+                    </div>
+
+                    <div class="admin-items">
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Wedding Album</h3>
+                            <h3 class="admin-t-op-nextlvl">May 29, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl">250MB</h3>
+                            <h3 class="admin-t-op-nextlvl">
+                                <button style="background-color: #9e9e72; border: none; color: black; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                                    <i class="fa fa-download"></i> Download Again
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Portrait Session</h3>
+                            <h3 class="admin-t-op-nextlvl">April 11, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl">120MB</h3>
+                            <h3 class="admin-t-op-nextlvl">
+                                <button style="background-color: #9e9e72; border: none; color: black; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                                    <i class="fa fa-download"></i> Download Again
+                                </button>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Louieli Photography Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo RB 5.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="admin-body">
+    <nav class="main-nav">
+        <a href="index.html"><img src="assets/images/Logo RB 5.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <button class="login-button" onclick="window.location.href='index.html'">Logout</button>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <header class="admin-header">
+    <div class="admin-menuicn">
+    <i class="fa fa-bars" id="admin-menuicn" onclick="toggleAdminMenu()"></i>
+    </div>
+    <div class="admin-logosec">
+        <div class="admin-logo">Admin</div>
+    </div>
+    
+    <div class="admin-searchbar">
+        <input type="text" placeholder="Search" />
+        <div class="admin-searchbtn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+
+    <div class="admin-message">
+        <div class="admin-circle"></div>
+        <i class="fa fa-bell admin-icn"></i>
+        <div class="admin-dp">
+           <!--- <img src="assets/images/about1.jpg" class="admin-dpicn" alt="profile" /> --->
+        </div>
+    </div>
+</header>
+
+    <div class="admin-main-container">
+        <div class="admin-navcontainer">
+            <nav class="admin-nav">
+                <div class="admin-nav-upper-options">
+                    <div class="admin-nav-option admin-option1">
+                        <i class="fa fa-dashboard admin-nav-img"></i>
+                        <h3>Dashboard</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-file-text admin-nav-img"></i>
+                        <h3>Photos</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-users admin-nav-img"></i>
+                        <h3>Clients</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-calendar admin-nav-img"></i>
+                        <h3>Bookings</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-user admin-nav-img"></i>
+                        <h3>Profile</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-cog admin-nav-img"></i>
+                        <h3>Settings</h3>
+                    </div>
+
+                    <div class="admin-nav-option">
+                        <i class="fa fa-sign-out admin-nav-img"></i>
+                        <h3>Logout</h3>
+                    </div>
+
+                    <div class="admin-nav-option admin-home">
+                        <i class="fa fa-home admin-nav-img"></i>
+                        <h3><a href="index.html" style="color: inherit; text-decoration: none;">Main Site</a></h3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="admin-main">
+            <div class="admin-searchbar2">
+                <input type="text" placeholder="Search" />
+                <div class="admin-searchbtn">
+                    <i class="fa fa-search admin-icn srchicn"></i>
+                </div>
+            </div>
+
+            <div class="admin-box-container">
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">250</h2>
+                        <h2 class="admin-topic">Photo<br>Sessions</h2>
+                    </div>
+                    <i class="fa fa-camera fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">120</h2>
+                        <h2 class="admin-topic">Clients</h2>
+                    </div>
+                    <i class="fa fa-users fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">320</h2>
+                        <h2 class="admin-topic">Messages</h2>
+                    </div>
+                    <i class="fa fa-comment fa-2x" style="color: beige;"></i>
+                </div>
+
+                <div class="admin-box">
+                    <div class="admin-text">
+                        <h2 class="admin-topic-heading">15</h2>
+                        <h2 class="admin-topic">Pending<br>Bookings</h2>
+                    </div>
+                    <i class="fa fa-calendar fa-2x" style="color: beige;"></i>
+                </div>
+            </div>
+
+            <div class="admin-report-container">
+                <div class="admin-report-header">
+                    <h1 class="admin-recent-Articles">Recent Bookings</h1>
+                    <button class="admin-view">View All</button>
+                </div>
+
+                <div class="admin-report-body">
+                    <div class="admin-report-topic-heading">
+                        <h3 class="admin-t-op">Client</h3>
+                        <h3 class="admin-t-op">Package</h3>
+                        <h3 class="admin-t-op">Date</h3>
+                        <h3 class="admin-t-op">Status</h3>
+                    </div>
+
+                    <div class="admin-items">
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">John Smith</h3>
+                            <h3 class="admin-t-op-nextlvl">Wedding Package 3</h3>
+                            <h3 class="admin-t-op-nextlvl">June 15, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Confirmed</h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Sarah Johnson</h3>
+                            <h3 class="admin-t-op-nextlvl">Standard Package 2</h3>
+                            <h3 class="admin-t-op-nextlvl">May 28, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Confirmed</h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Michael Rodriguez</h3>
+                            <h3 class="admin-t-op-nextlvl">Wedding Package 1</h3>
+                            <h3 class="admin-t-op-nextlvl">July 3, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Pending</h3>
+                        </div>
+
+                        <div class="admin-item1">
+                            <h3 class="admin-t-op-nextlvl">Lisa Chen</h3>
+                            <h3 class="admin-t-op-nextlvl">Standard Package 3</h3>
+                            <h3 class="admin-t-op-nextlvl">June 2, 2025</h3>
+                            <h3 class="admin-t-op-nextlvl admin-label-tag">Confirmed</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
